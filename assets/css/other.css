@@ -1,0 +1,521 @@
+.lead-top {
+    margin-top:1em;
+}
+
+.brand.brand-active {
+    color:#fff;
+}
+
+.bb-code {
+    font-family:"Courier";
+    font-size:1.2em;
+}
+
+.bb-code-small {
+    font-size:0.9em;
+}
+
+.bb-alert {
+	z-index:2000;
+	width:auto;
+    position:fixed;
+    bottom:75%;
+    right:40%;
+    margin-bottom:0;
+    font-size:1.2em;
+    padding:1em 1.3em;
+	border-radius:4px 4px 4px 4px;
+}
+.sidebar-nav .fa,.navbar .fa,.span3 .fa {
+  padding: 0 8px 0 5px;
+}
+
+/* Tag List */
+.tag-list {
+  line-height: 20px;
+  width: 800px;
+}
+.tag-list .tag {
+  margin-right: 5px;
+  padding: 4px 3px;
+  font-size: 12px;
+}
+.tag-list .tag a {
+  position: relative;
+  top: -4px;
+  right: -2px;
+  color: #aaa;
+}
+.tag-list .tag a:hover {
+  color: #0088cc;
+}
+.tags-btn {
+  position: relative;
+  top: 3px;
+  left: 5px;
+}  
+.hidden-field {
+  visibility: hidden;
+  position: absolute;
+}
+label.discuss {
+  margin: 0 0 10px;
+}
+td a i{
+  cursor:pointer;
+}
+/* Replace CSS */
+select.i-options {
+  /* width: 284px; */
+}
+/* Image Upload */
+.upload {
+  width: 450px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.upload form {
+  margin: 0;
+}
+
+.upload .alert,.alert.mini {
+  width: 450px;
+  font-size: 12px;
+  padding: 5px 10px;
+  line-height: 23px;
+  background: #ffe;
+  border-color: #ddd;
+  font-family: "微软雅黑","Microsoft Yahei", Arial,sans-serif;
+  border-radius: 1px;
+}
+.upload .btn{ 
+  margin-right: 4px;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  font-size: .9em;
+  padding: 2px 6px;
+  border-radius: 1px;
+}
+.upload .btn input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  border: solid transparent;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  cursor: pointer;
+}
+.upload .progress {
+  width: 350px;
+  position: absolute;
+  margin-top: -25px;
+  margin-left: 100px;
+  display: none;
+}
+.imgupload .imgshow {
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  margin: 20px 0;
+  text-align: center;
+  color: #aaa;
+  font-size: 13px;
+  background: #ffe;
+  border: 1px dashed #ddd;
+}
+.imgupload .imgshow img {
+  max-width: 140px;
+  max-height: 140px;
+}
+.imgupload .imgInfo{
+  position: absolute;
+  margin-top: -40px;
+  margin-left: 170px;
+  font-size: 13px;
+  color: #aaa;
+}
+.imgupload .errorInfo {
+  margin-top: -180px;
+}
+.upload .progress-escape {
+  width: 714px;
+  height: 49px;
+  margin: 0;
+  margin-top: -50px;
+  border: none;
+  box-shadow: none;
+  opacity: .4;
+}
+/* Intro TextArea */
+label.intro {
+  width: 600px;
+}
+.intro .word-nums {
+  float: right;
+  font-size: 13px;
+}
+.intro .word-nums span {
+  font-weight: bold;
+  padding: 0 2px;
+}
+
+/* Imitate Table */
+.fox-table {
+  width: 650px;
+  margin: 20px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-bottom: 1px solid #eee;
+  border-collapse: separate;
+  border-radius: 4px;
+}
+.fox-table .thead {
+  background: #f5f5f5;
+  /* padding: 10px; */
+}
+.fox-table p {
+  margin: 0;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+}
+
+.fox-table span {
+  display: inline-block;
+  text-align: center;
+  font-size: 13px;
+}
+.fox-table .tbody .tr:nth-child(odd){
+  background-color: #f9f9f9;
+}
+.fox-table .tbody .tr:hover {
+  background-color: #f5f5f5;
+}
+.fox-table input {
+  margin: 0;
+  padding: 0px 3px;
+  text-align: center;
+  height: 28px;
+  line-height: 28px;
+}
+.fox-table input.unedit {
+  border: none;
+  background: none;
+  box-shadow: none;
+}
+.fox-table input.unedit:hover {
+  border: 1px solid #ccc;
+}
+
+.fox-table .id { width:30px; }
+.fox-table .name { width:214px;}
+.fox-table .size,.fox-table .size input { width:120px; }
+.fox-table .date,.fox-table .date input { width:140px; }
+.fox-table .status { width:100px; }
+.fox-table .action { width:90px; }
+
+.fox-table .action  a {
+  cursor: pointer;
+}
+
+.tbody .save-action {
+  display: none;
+}
+.tbody .inedit.action {
+  display:none;
+}
+.tbody .inedit.save-action {
+  display:inline-block;
+}
+
+
+/* Discuss Table */
+table.distable {
+  width: 800px;
+  margin: 20px 0;
+  padding-top: 1px;
+  border: 1px solid #ddd;
+  border-collapse: separate;
+  border-radius: 4px;
+}
+table.distable thead {
+  background: #fff;
+}
+table.distable thead tr,table.distable thead tr:hover {
+  color: #333;
+}
+.distable th {
+  font-weight: normal;
+}
+.distable th, .distable td {
+  text-align: center;
+}
+.distable th.cont {
+  width: 400px;
+}
+.distable td i.true {
+  color: #999;
+  cursor: default;
+}
+.pagination-mini {
+  width: 800px;
+  text-align: center;
+}
+.pagination-mini ul > li > a {
+  padding: 0 13px;
+  line-height: 28px;
+}
+.pagination-mini a:hover {
+  cursor: pointer;
+}
+
+/* Widget|Tools */
+.fa-toggle {
+  position: absolute;
+  margin-top: 2px;
+}
+.fa-toggle.fa-thumb-tack{
+  margin-left: 16px;
+}
+.fa-toggle.active {
+  color: #333;
+  display: inline-block!important;
+}
+.fa-toggle.warning {
+  color: #fca;
+  display: inline-block!important;
+}
+td.action {
+  min-width: 60px;
+}
+
+/* Image Nav */
+.img-nav {
+  width: 450px;
+  border-bottom: 1px solid #ddd;
+}
+.img-nav  a.check {
+  color: #333;
+  padding: 5px 10px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-bottom: none;
+}
+.img-nav  a.check:hover {
+  padding-top: 5px;
+  background: #fff;
+}
+.img-nav  a {
+  margin-right: 3px;
+  padding: 5px 11px;
+  display: inline-block;
+  position: relative;
+  top: 1px;
+  cursor: pointer;
+  color: #888;
+  border: none;
+  border-radius: 4px 4px 0 0;
+  background: none;
+  text-decoration: none;
+} 
+.img-nav  a:hover {
+  padding-top: 6px;
+  background: #eee;
+}
+
+/* Action Style */
+.controls.source  .span1{
+  width: 70px;
+}
+.controls.source  .span2{
+  width: 200px;
+}
+.controls.source  .span3{
+  width: 150px;
+}
+.controls.source  .span4{
+  width: 60px;
+}
+
+/* -- SWFUpload Styles ------------------------------- */
+
+div.fieldset {
+	border:  1px solid #afe14c;
+	margin: 10px 0;
+	padding: 20px 10px;
+}
+div.fieldset span.legend {
+	position: relative;
+	background-color: #FFF;
+	padding: 3px;
+	top: -30px;
+	font: 700 14px Arial, Helvetica, sans-serif;
+	color: #73b304;
+}
+
+div.flash {
+	width: 375px;
+	margin: 10px 5px;
+	border-color: #D9E4FF;
+
+	-moz-border-radius-topleft : 5px;
+	-webkit-border-top-left-radius : 5px;
+    -moz-border-radius-topright : 5px;
+    -webkit-border-top-right-radius : 5px;
+    -moz-border-radius-bottomleft : 5px;
+    -webkit-border-bottom-left-radius : 5px;
+    -moz-border-radius-bottomright : 5px;
+    -webkit-border-bottom-right-radius : 5px;
+
+}
+
+.progressWrapper {
+	width: 357px;
+	overflow: hidden;
+}
+
+.progressContainer {
+	margin: 5px;
+	padding: 4px;
+	border: solid 1px #E8E8E8;
+	background-color: #F7F7F7;
+	overflow: hidden;
+}
+/* Message */
+.message {
+	margin: 1em 0;
+	padding: 10px 20px;
+	border: solid 1px #FFDD99;
+	background-color: #FFFFCC;
+	overflow: hidden;
+}
+/* Error */
+.red {
+	border: solid 1px #B50000;
+	background-color: #FFEBEB;
+}
+
+/* Current */
+.green {
+	border: solid 1px #DDF0DD;
+	background-color: #EBFFEB;
+}
+
+/* Complete */
+.blue {
+	border: solid 1px #CEE2F2;
+	background-color: #F0F5FF;
+}
+
+.progressName {
+	font-size: 8pt;
+	font-weight: 700;
+	color: #555;
+	width: 323px;
+	height: 14px;
+	text-align: left;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.progressBarInProgress,
+.progressBarComplete,
+.progressBarError {
+	font-size: 0;
+	width: 0%;
+	height: 2px;
+	background-color: blue;
+	margin-top: 2px;
+}
+
+.progressBarComplete {
+	width: 100%;
+	background-color: green;
+	visibility: hidden;
+}
+
+.progressBarError {
+	width: 100%;
+	background-color: red;
+	visibility: hidden;
+}
+
+.progressBarStatus {
+	margin-top: 2px;
+	width: 337px;
+	font-size: 7pt;
+	font-family: Arial;
+	text-align: left;
+	white-space: nowrap;
+}
+
+a.progressCancel {
+	font-size: 0;
+	display: block;
+	height: 14px;
+	width: 14px;
+	background-image: url(../images/cancelbutton.gif);
+	background-repeat: no-repeat;
+	background-position: -14px 0px;
+	float: right;
+}
+
+a.progressCancel:hover {
+	background-position: 0px 0px;
+}
+
+/* Pagebar */
+
+.pagebar {
+  text-align: left;
+  overflow: hidden;
+  clear: both;
+}
+
+.pages a,.pages span {
+  color: #727171;
+  margin: 0 2px;
+  background: #ffe;
+  padding: 3px 6px;
+  font-size: 13px;
+  font-family: 'Helvetica Neue',Helvetica,Arial,'Hiragino Sans GB';
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  display: inline;
+  cursor: pointer;
+}
+
+.pages a:hover {
+  background: #eee;
+  text-decoration: none;
+}
+
+.pages a.checked {
+  background: #727171;
+  color: #eee;
+  border-color: #727171;
+}
+
+/* -- SWFUpload Object Styles ------------------------------- */
+.swfupload {
+	margin-bottom: 5px;
+}
+
+/*ICON*/
+.fa-chevron-up::before {
+  content: "\f077";
+}
+.sidebar-nav .nav-header.collapsed .fa-chevron-up::before {
+  content: "\f078";
+}
+.sidebar-nav .nav-header .fa-chevron-up {
+  float: right;
+  padding: 10px;
+}
+
+.ke-container {
+  margin-bottom: 10px!important;
+}

@@ -1,0 +1,10 @@
+# Name SOSAdmin         #
+# Date 2014-05-26       #
+# Version v1.0          #
+# Rebase OSAdmin v2.0.3 #
+# Author spincat.me     #
+
+Features List 
+1.更新至Font Awesome 4.1 
+更新明细请看：http://fortawesome.github.io/Font-Awesome/whats-new/
+2.

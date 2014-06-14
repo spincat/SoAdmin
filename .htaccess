@@ -1,0 +1,12 @@
+DirectoryIndex index.php
+ErrorDocument 404 /404.php  
+
+Options +FollowSymLinks -Multiviews
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(\w+/.*) modules/$1 [L]
+</IfModule>
