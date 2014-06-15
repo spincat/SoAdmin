@@ -77,17 +77,19 @@
 						<i class="fa fa-angle-right"></i>
 						<li><a href="<{$content_header.menu_url}>"><{$content_header->menu_name}></a></li>
 					<{/if}>
-					<!-- <{if $content_header->shortcut_allowed}>
+					<{if $content_header->shortcut_allowed}>
 						<{if $content_header->id|in_array:$user_info.shortcuts_arr}>
-						<li class="active"><a title= "移除快捷菜单" href="#"><i class="fa fa-minus" method="del" url="<{$smarty.const.ADMIN_URL}>/ajax/shortcut.php?menu_id=<{$content_header->id}>"></i></a></li>
+						<li class="shortcut active"><a class="shortcut-opt" title= "移除快捷菜单" method="del" url="<{$smarty.const.ADMIN_URL}>/ajax/shortcut.php?menu_id=<{$content_header->id}>"><i class="fa fa-minus"></i></a></li>
+						<li class="shortcut"><a class="shortcut-opt" title= "加入快捷菜单" method="add" url="<{$smarty.const.ADMIN_URL}>/ajax/shortcut.php?menu_id=<{$content_header->id}>"><i class="fa fa-plus"></i></a></li>
 						<{else}>
-						<li class="active"><a title= "加入快捷菜单" href="#"><i class="fa fa-plus" method="add" url="<{$smarty.const.ADMIN_URL}>/ajax/shortcut.php?menu_id=<{$content_header->id}>"></i></a></li>
+						<li class="shortcut active"><a class="shortcut-opt" title= "加入快捷菜单" method="add" url="<{$smarty.const.ADMIN_URL}>/ajax/shortcut.php?menu_id=<{$content_header->id}>"><i class="fa fa-plus"></i></a></li>
+						<li class="shortcut"><a class="shortcut-opt" title= "移除快捷菜单" method="del" url="<{$smarty.const.ADMIN_URL}>/ajax/shortcut.php?menu_id=<{$content_header->id}>"><i class="fa fa-minus"></i></a></li>
 						<{/if}>
-					<{/if}> -->
+					<{/if}>
 				</ol>
-				<div class="container-fluid">
-					<div class="row-fluid">
-						<div class="bb-alert alert alert-info" style="display: none;">
+				<div class="container">
+					<div class="row">
+						<div class="opt-info alert alert-info" style="display: none;">
 							<span>操作成功</span>
 						</div>
 					</div>

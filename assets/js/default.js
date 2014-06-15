@@ -40,29 +40,24 @@ $(function(){
 		$(this).siblings('i').addClass('on');
 	})
 
+	listenShortCut('a.shortcut-opt');
 })
 
+//快捷菜单操作监听
 function listenShortCut(clazz){
-	$('.'+clazz).click(function(){
+	$(clazz).click(function(){
 		elem=$(this);
 		url = $(this).attr("url");
 		method= $(this).attr("method");
 		$.getJSON(url+"&method="+method, function(json){
 			if(json.result){
-				$(".bb-alert").find("span").html(json.msg);
-				$(".bb-alert").fadeIn();
-				
+				$(".opt-info").find("span").html(json.msg);
+				$(".opt-info").fadeIn();
 				setTimeout(function(){
-					$(".bb-alert").fadeOut();
+					$(".opt-info").fadeOut();
 				},3000);
 				setTimeout(function(){
-					if(method=="add"){
-						elem.attr("method","del")
-						elem.attr("class","icon-minus");
-					}else if (method=="del"){
-						elem.attr("method","add")
-						elem.attr("class","icon-plus");
-					}
+					$("li.shortcut").toggleClass('active');
 				},3000);
 				
 			}

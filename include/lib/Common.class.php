@@ -5,23 +5,10 @@ class Common {
 	//获取OSAdmin的action_url，用于权限验证
 	public static function getActionUrl(){
 		$action_script=$_SERVER['SCRIPT_NAME'];
-		$action_script = preg_replace('/^\/modules(.*)$/','$1',$action_script);//过滤默认模块访问路径
-		$admin_url = rtrim(strtolower(ADMIN_URL),'/');
-		
-		if(!strpos($admin_url,'http://')){
-			$admin_url_no_http = substr($admin_url,7);			
-		}else{
-			$admin_url_no_http=$admin_url;
-		}
-
-		$slash=strpos($admin_url_no_http,'/');
-		if($slash){
-			$sub_dir = substr($admin_url_no_http,$slash);
-			$action_url = substr($action_script,strlen($sub_dir));
-		}else{
-			$action_url =$action_script;
-		}
-		return str_replace('//','/',$action_url);
+		$sub_url = parse_url(ADMIN_URL,PHP_URL_PATH);
+		$filter_url = addcslashes($sub_url,'/');
+		$action_url = preg_replace('/^'.$filter_url.'(\/modules)?/','',$action_script);//过滤默认模块访问路径
+		return $action_url;
 	}
 	
 	public static function exitWithMessage($message_detail, $forward_url, $second = 3,$type="message") {

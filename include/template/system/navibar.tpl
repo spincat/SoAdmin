@@ -18,7 +18,7 @@
                     </a>
                     <ul class="dropdown-menu">
                         <li><a href="<{$smarty.const.ADMIN_URL}>/admin/set.php?t=default">默认模板</a></li>
-                        <li><a href="<{$smarty.const.ADMIN_URL}>/admin/set.php?t=blacktie">黑色领结</a></li>
+                        <li><a href="<{$smarty.const.ADMIN_URL}>/admin/set.php?t=lumen">光影流年</a></li>
                         <li><a href="<{$smarty.const.ADMIN_URL}>/admin/set.php?t=wintertide">冰雪冬季</a></li>
                         <li><a href="<{$smarty.const.ADMIN_URL}>/admin/set.php?t=schoolpainting">青葱校园</a></li>
                     </ul>

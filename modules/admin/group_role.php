@@ -27,8 +27,8 @@ if (Common::isPost ()) {
 	if($group_id==1){
 		$temp = array();
 		foreach ($group_role_array as $group_role){
-			//系统预留菜单id为100以内
-			if($group_role>100){
+			//系统预留菜单id为26以内
+			if($group_role>26){
 				$temp[]=$group_role;
 			}
 		}		
@@ -53,6 +53,6 @@ if (Common::isPost ()) {
 	Template::assign ( 'group_id', $group_id );
 	Template::assign ( 'group_option_list', $group_option_list );
 	Template::assign ( 'group_role', $group_role_array );
-	Template::assign ( 'back_url',Common::getActionUrl());
+	Template::assign ( 'back_url','http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF']);
 	Template::display ( 'admin/group_role.tpl' );	
 }

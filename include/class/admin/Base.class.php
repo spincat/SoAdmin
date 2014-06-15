@@ -17,7 +17,7 @@ class Base {
 
 	public static function __addProperty($bean,$properties){
 		foreach ($properties as $key => $value) {
-			$bean->$key = $value;
+			$bean->$key = htmlspecialchars($value);
 		}
 		return $bean;
 	}
@@ -26,7 +26,7 @@ class Base {
 		$i = 0;
 		foreach ($beans as $bean) {
 			foreach ($properties as $key => $value) {
-				$bean->$key = $value;
+				$bean->$key = htmlspecialchars($value);
 			}
 			$beans[$i]=$bean;
 			$i++;

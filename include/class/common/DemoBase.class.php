@@ -14,7 +14,7 @@ class DemoBase extends Base{
 
 	public static function __addProperty($bean,$properties){
 		foreach ($properties as $key => $value) {
-			$bean->$key = $value;
+			$bean->$key = htmlspecialchars($value);
 		}
 		return $bean;
 	}
@@ -23,7 +23,7 @@ class DemoBase extends Base{
 		$i = 0;
 		foreach ($beans as $bean) {
 			foreach ($properties as $key => $value) {
-				$bean->$key = $value;
+				$bean->$key = htmlspecialchars($value);
 			}
 			$beans[$i]=$bean;
 			$i++;

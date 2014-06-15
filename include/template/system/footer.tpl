@@ -4,7 +4,7 @@
                         <hr>
                         <p class="pull-right">Base on SomewhereYu's <a href="http://osadmin.org/" target="_blank">OSAdmin</a></p>
 
-                        <p>&copy; 2014 <a href="http://spincat.me/labs/soadmin" target="_blank">Spincat.me</a></p>
+                        <p>&copy; 2014 <a href="http://spincat.me" target="_blank">Spincat.me</a></p>
                     </footer>
 				</div>
 			</div>

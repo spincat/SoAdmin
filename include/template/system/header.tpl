@@ -10,33 +10,15 @@
     <link rel="shortcut icon" type="image/x-icon" href= "<{$smarty.const.ADMIN_URL}>/assets/images/favicon.ico" >
     <link rel="stylesheet" href="<{$smarty.const.ADMIN_URL}>/assets/lib/bootstrap/css/bootstrap.css">
     
-    <link rel="stylesheet" href="<{$smarty.const.ADMIN_URL}>/assets/stylesheets_<{$user_info.template}>/theme.css">
+    <link rel="stylesheet" href="<{$smarty.const.ADMIN_URL}>/assets/css/default.css">
+	<link rel="stylesheet" href="<{$smarty.const.ADMIN_URL}>/assets/css/extra.css">
     <link rel="stylesheet" href="<{$smarty.const.ADMIN_URL}>/assets/lib/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="<{$smarty.const.ADMIN_URL}>/assets/css/other.css">
-	<link rel="stylesheet" href="<{$smarty.const.ADMIN_URL}>/assets/css/jquery-ui.css" />
+    <link rel="stylesheet" href="<{$smarty.const.ADMIN_URL}>/assets/css/jquery-ui.css" />
+    <!-- <link rel="stylesheet" href="<{$smarty.const.ADMIN_URL}>/assets/theme/<{$user_info.template}>/theme.css"> -->
 	
     <script src="<{$smarty.const.ADMIN_URL}>/assets/lib/jquery-1.8.1.min.js" ></script>
-    <script src="<{$smarty.const.ADMIN_URL}>/assets/js/other.js"></script>
     <script src="<{$smarty.const.ADMIN_URL}>/assets/js/jquery-ui.js"></script>
-    <!-- Demo page code -->
-
-    <style type="text/css">
-        #line-chart {
-            height:300px;
-            width:800px;
-            margin: 0px auto;
-            margin-top: 1em;
-        }
-        .brand { font-family: georgia, serif; }
-        .brand .first {
-            color: #ccc;
-            font-style: italic;
-        }
-        .brand .second {
-            color: #fff;
-            font-weight: bold;
-        }
-    </style>
+    <script src="<{$smarty.const.ADMIN_URL}>/assets/js/default.js"></script>
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>

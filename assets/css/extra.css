@@ -1,34 +1,3 @@
-.lead-top {
-    margin-top:1em;
-}
-
-.brand.brand-active {
-    color:#fff;
-}
-
-.bb-code {
-    font-family:"Courier";
-    font-size:1.2em;
-}
-
-.bb-code-small {
-    font-size:0.9em;
-}
-
-.bb-alert {
-	z-index:2000;
-	width:auto;
-    position:fixed;
-    bottom:75%;
-    right:40%;
-    margin-bottom:0;
-    font-size:1.2em;
-    padding:1em 1.3em;
-	border-radius:4px 4px 4px 4px;
-}
-.sidebar-nav .fa,.navbar .fa,.span3 .fa {
-  padding: 0 8px 0 5px;
-}
 
 /* Tag List */
 .tag-list {
@@ -64,10 +33,7 @@ label.discuss {
 td a i{
   cursor:pointer;
 }
-/* Replace CSS */
-select.i-options {
-  /* width: 284px; */
-}
+
 /* Image Upload */
 .upload {
   width: 450px;
@@ -148,6 +114,7 @@ select.i-options {
   box-shadow: none;
   opacity: .4;
 }
+
 /* Intro TextArea */
 label.intro {
   width: 600px;
@@ -231,7 +198,6 @@ label.intro {
   display:inline-block;
 }
 
-
 /* Discuss Table */
 table.distable {
   width: 800px;
@@ -292,7 +258,7 @@ td.action {
   min-width: 60px;
 }
 
-/* Image Nav */
+/* Image Switch Nav */
 .img-nav {
   width: 450px;
   border-bottom: 1px solid #ddd;
@@ -340,7 +306,7 @@ td.action {
   width: 60px;
 }
 
-/* -- SWFUpload Styles ------------------------------- */
+/* -- SWFUpload Styles -- */
 
 div.fieldset {
 	border:  1px solid #afe14c;
@@ -363,12 +329,12 @@ div.flash {
 
 	-moz-border-radius-topleft : 5px;
 	-webkit-border-top-left-radius : 5px;
-    -moz-border-radius-topright : 5px;
-    -webkit-border-top-right-radius : 5px;
-    -moz-border-radius-bottomleft : 5px;
-    -webkit-border-bottom-left-radius : 5px;
-    -moz-border-radius-bottomright : 5px;
-    -webkit-border-bottom-right-radius : 5px;
+  -moz-border-radius-topright : 5px;
+  -webkit-border-top-right-radius : 5px;
+  -moz-border-radius-bottomleft : 5px;
+  -webkit-border-bottom-left-radius : 5px;
+  -moz-border-radius-bottomright : 5px;
+  -webkit-border-bottom-right-radius : 5px;
 
 }
 
@@ -499,7 +465,7 @@ a.progressCancel:hover {
   border-color: #727171;
 }
 
-/* -- SWFUpload Object Styles ------------------------------- */
+/* -- SWFUpload Object Styles -- */
 .swfupload {
 	margin-bottom: 5px;
 }

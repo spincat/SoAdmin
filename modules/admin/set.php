@@ -3,7 +3,7 @@ require ('../../include/init.inc.php');
 $t = '';
 extract ( $_REQUEST, EXTR_IF_EXISTS );
 $current_user_id = UserSession::getUserId();
-$templates=array("default","blacktie","wintertide","schoolpainting");
+$templates=array("default","lumen","wintertide","schoolpainting");
 
 if(!in_array($t,$templates)){
 	$t="default";

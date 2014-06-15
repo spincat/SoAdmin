@@ -43,7 +43,7 @@ class Pagination{
 		}
 		for($i=$start_page;$i<=$end_page;$i++){
 			if($i==$page_no){
-				$navibar.= "<li><span>$i</span></li>";
+				$navibar.= "<li class='active'><span>$i</span></li>";
 			}else{
 				$navibar.= "<li><a href=\" $url?$params&page_no=$i \">$i</a></li>";
 			}
