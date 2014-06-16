@@ -27,7 +27,7 @@
                 <td>回复内容</td><td class='reply-cont'><{$feedback->replycont}></td></tr>
             </tbody>
           </table>
-          <a href="#myModal" data-toggle="modal" class="btn btn-success reply-button">
+          <a href="#mailModal" data-toggle="modal" class="btn btn-success reply-button">
             <strong>回复</strong></a>
           <a href="<{$back_url}>" class="btn  btn-primary"><strong>返回</strong></a>
         </div>
@@ -35,20 +35,25 @@
     </div>
 
 <!-- Modal -->
-<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h3 id="myModalLabel">回复邮件</h3>
-  </div>
-  <div class="modal-body"></div>
-  <div class="modal-footer">
-    <button class="btn btn-primary submit">发送</button>
-    <button class="btn" data-dismiss="modal" aria-hidden="true">取消</button>
+<div id="mailModal" class="modal fade">
+ <div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      <h4 class="modal-title" id="mailModalLabel">回复邮件</h4>
+    </div>
+    <div class="modal-body"></div>
+    <div class="modal-footer">
+      <button class="btn btn-primary submit">确认</button>
+      <button class="btn" data-dismiss="modal" aria-hidden="true">取消</button>
+    </div>
   </div>
 </div>
+</div>
+
 <script>
-  $("#myModal .submit").click(function(){
-    var content = $("#myModal .conts").attr("value");
+  $("#mailModal .submit").click(function(){
+    var content = $("#mailModal .conts").attr("value");
     if(content){
       var address = '<{$feedback->email}>';
       var subject = "感谢您的反馈";
@@ -57,8 +62,8 @@
     }
   })
 
-  $("#myModal").on('show',function() {
-    var formStr = "<form><textarea class='conts' name='cont' style='width:480px;height:100px;' placeholder='输入回复内容'></textarea></form>";
+  $("#mailModal").on('show.bs.modal',function() {
+    var formStr = "<form><textarea class='conts' name='cont' placeholder='输入回复内容'></textarea></form>";
     $(".modal-body").html(formStr);
     if($('.reply-button').hasClass('disabled')){
       return false;
@@ -80,11 +85,11 @@ function sendEmail(mailData){
      client.setEncryptMode(2);  
      client.sendMail(data,configs,function(result){  
       if(result.match(/Success/)){
-        $.post("<{$admin_url}>/feedback/feedback_view.php",{sended:true,id:<{$feedback->id}>,cont:mailData.content},function(msg,status){
+        $.post("<{$admin_url}>/demo/feedback_view.php",{sended:true,id:<{$feedback->id}>,cont:mailData.content},function(msg,status){
           if(msg){
             $('.status span').html("已回复").attr('class','label label-success');
             $('.reply-cont').html(mailData.content).parent("tr").fadeIn();
-            $('#myModal').modal('hide');
+            $('#mailModal').modal('hide');
             if(!$.parseJSON(configs).debug){
               $('.reply-button').addClass('disabled');
             }
@@ -107,7 +112,7 @@ function checkSendable(status,debug){
 }
 
 var nums = 0;
-var tip = "正在发送中";
+var tip = "邮件正在发送中";
 
 /*
   显示正在加载提示

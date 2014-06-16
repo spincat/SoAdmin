@@ -50,5 +50,5 @@ if (Common::isPost()){
 	Template::assign ( 'page_no', $page_no );
 	Template::assign ( 'page_html', $page_html );
 
-	Template::display ( 'demo/feedback.tpl' );
+	Template::display ('demo/feedback.tpl' );
 }

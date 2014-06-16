@@ -21,8 +21,11 @@ Features List
 
 /**
  * version v1.1
- * pubdate 2014-06-14 
+ * pubdate 2014-06-16
  * author  spincat.me@gmail.com
  */
 
-Features List 
+Features List
+1.优化了图标选择界面，支持图标实时预览和动画图标
+2.修复邮件样例中不能发送邮件的问题
+3.修复了系统路径相关的问题

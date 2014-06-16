@@ -1,4 +1,4 @@
-<div class="container main">
+<div id="container" class="container main">
 	<div class="row">
 
 		<div class="nav-wrap">
@@ -11,7 +11,7 @@
 							<{if $module->id == $current_module_id }>
 								<li class="nav-li active">
 									<{if $module->menu_list|count == 0}>
-										<a href="<{$module->module_url}>">
+										<a href="<{$smarty.const.ADMIN_URL}><{$module->module_url}>">
 										<i class="fa <{$module->module_icon}>"></i><span calss="module-wrap"><{$module->module_name}></span>
 									<{else}>
 										<a data-toggle="collapse" data-parent="#menu-list" href="#sidebar_menu_<{$module->id}>">
@@ -27,7 +27,7 @@
 										<{if strtolower(substr($module->module_url,0,7))=='http://'}>
 											<a target=_blank href="<{$module->module_url}>">
 										<{else}>
-											<a href="<{$module->module_url}>">
+											<a href="<{$smarty.const.ADMIN_URL}><{$module->module_url}>">
 										<{/if}>
 										<i class="fa <{$module->module_icon}>"></i><span calss="module-wrap"><{$module->module_name}></span>
 									<{else}>

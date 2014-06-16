@@ -50,8 +50,6 @@ if (Common::isPost()){
 
  $page_html=Pagination::showPager("info.php?date=$date&keyword=$keyword&search=$search",$page_no,$page_size,$row_count);
 
-
-
   // 设置模板变量
  Template::assign ('infos',$infos);
  Template::assign ( '_GET', $_GET );

@@ -29,6 +29,8 @@
        </div>
    </div>
 </div>
+<div class="container message">
+      <{include file = "./footer.tpl"}>
 
 <script type="text/javascript">
 $("#verify_code").click(function(){
@@ -40,6 +42,5 @@ $("#verify_code").click(function(){
 });
 </script>
 
-<{include file = "./footer.tpl"}>
 
 

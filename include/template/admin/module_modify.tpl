@@ -22,16 +22,13 @@
 					<label>模块链接</label>
 					<input type="text" name="module_url" value="<{$module->module_url}>" class="form-control" required="true">
 				</div>
-				<label>模块图标</label>
-				<div style="width:20px;padding-bottom:5px">
-					<a class="icon" style="width:20px;line-height:2em;">
-					<i id="icon_preview" class="<{$module->module_icon}>"></i></a>
+				<div class="form-group inline clearfix">
+					<label>模块图标</label>
+					<span class="form-control span1 text-center"><i id="icon-preview" class="fa <{$module->module_icon}>"></i></span>
+					<input class="form-control span3" id="icon-name" type="text" name="module_icon" value="<{$module->module_icon}>" placeholder="fa-icon">
+					<span class="form-control span2 btn btn-info" id="icon-select">更改图标</span>
 				</div>
-				<input type="text" readonly value="<{$module->module_icon}>" name="module_icon" id="icon_id" style="width:180px" >
-				<a id="icon_select" class="btn btn-info" style="vertical-align:top" >更改图标</a>
-				<!-- 选择图标层-->			
 				<{include file="admin/icon_select.tpl" }>
-				<!-- 选择图标层 结束-->
 				
 				<div class="form-group">
 					<label>模块排序数字(数字越小越靠前)</label>
@@ -54,23 +51,6 @@
         </div>
     </div>
 </div>
-<script>
-$('#icon_select').click(function(){			
-	$('#myModal').modal({
-		backdrop:true,
-		keyboard:true,
-		show:true
-    });	
-});
-
-$('.icon').click(function(){
-		var obj=$(this);
-		$('#icon_preview').removeClass().addClass(obj.text());
-		$('#icon_id').val(obj.text());
-		$('#myModal').modal('toggle');
-});
-</script>
 <!-- END 以下内容不需更改，请保证该TPL页内的标签匹配即可 -->
 <{include file="system/footer.tpl" }>
-
 <{include file ="common/ajaxSubmit.tpl"}>

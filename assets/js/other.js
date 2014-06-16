@@ -3,9 +3,9 @@ $(function(){
 	var navClosed = $.cookie("navClosed");
 	if(navClosed!=null){
 		if(navClosed=="true"){
-			$("#container").removeClass("toggler-on").addClass("toggler-on");
+			$(".container").removeClass("toggler-on").addClass("toggler-on");
 		}else if(navClosed=="false"){
-			$("#container").removeClass("toggler-on");
+			$(".container").removeClass("toggler-on");
 		}
 	}
 	//左侧导航菜单图标切换
@@ -13,20 +13,20 @@ $(function(){
 		$(this).toggleClass("on");
 		$(this).children("a").children(".fa.collapse").toggleClass("on");
 	}).mouseenter(function(){
-		if($("#container").hasClass("toggler-on"))
+		if($(".container").hasClass("toggler-on"))
 			$(this).addClass("hover");
 	}).mouseleave(function(){
-		if($("#container").hasClass("toggler-on"))
+		if($(".container").hasClass("toggler-on"))
 			$(this).removeClass("hover");
 	});
-	$("#menu a[data-toggle='collapse']").click(function(){
-		if($("#container").hasClass("toggler-on")){
+	$("a[data-toggle='collapse']").click(function(){
+		if($(".container").hasClass("toggler-on")){
 			return false;
 		}
 	});
 	$(".sidebar-toggler").click(function(){
-		$("#container").toggleClass("toggler-on");
-		if($("#container").hasClass("toggler-on")){
+		$(".container.main").toggleClass("toggler-on");
+		if($("div.container").hasClass("toggler-on")){
 			$.cookie("navClosed","true",{expires:30,path:'/;'});
 		}else{
 			$.cookie("navClosed","false",{expires:30,path:'/;'});

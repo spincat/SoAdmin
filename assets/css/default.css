@@ -452,13 +452,75 @@ a.shortcut-opt {
 }
 
 /*Modal Style*/
-#actionModal,#submitModal {
-	margin-top: 200px;
+#actionModal,#submitModal,#mailModal{
+	margin-top: 150px;
 	overflow: hidden;
 	z-index: 1100;
 }
+#mailModal .modal-body {
+    padding: 20px;
+    height: 130px;
+	padding-bottom: 0;
+}
+#iconModal {
+	z-index: 1100;
+}
+#iconModal .modal-body {
+	padding-bottom: 0;
+	padding-right: 0;
+}
+#iconModal .icon-type {
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+#iconModal .modal-dialog {
+	width: 910px;
+    height: 640px;	
+}
+#iconModal .modal-footer {
+	padding:0 10px;
+}
+#iconModal .pagination a {
+	cursor:pointer;
+}
+#iconModal .icon-list {
+    padding: 0;
+    list-style: none;
+}
+#iconModal a.more {
+	font-size: 13px;
+	margin-left: 10px;
+	color: #888;
+}
+.icon-list li {
+	margin: 0 20px 5px 20px;
+	float: left;
+	width: 180px;
+}
+.icon-list .icon {
+    text-decoration: none;
+ 
+}
+.icon-list .icon:hover {
+	background:#eee;
+	padding:5px;
+}
+.icon-list i {
+	width: 15px;	
+}
+.icon-list .icon-name {
+	margin-left:10px
+}
 .modal-open {
 	overflow: auto;
+}
+.modal-body textarea {
+    width: 100%;
+	
+    height: 100px;
+    padding: 5px 10px;
+    border: 1px solid #d7d7d7;
+    resize: none;
 }
 
 /*Replae Default CSS*/

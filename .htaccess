@@ -5,8 +5,7 @@ Options +FollowSymLinks -Multiviews
 
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteBase /
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^(\w+/.*) modules/$1 [L]
+RewriteRule ^(.*) modules/$1 [L]
 </IfModule>

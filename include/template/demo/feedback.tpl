@@ -79,6 +79,11 @@
 			   <!-- END -->						 
 	</div>
 </div>
+
+<div class="alert alert-info">
+				<button type="button" class="close" data-dismiss="alert">×</button>
+				<strong>注意！</strong>要测试邮件反馈样例，请先在feedback表中添加测试数据。要使用自己的邮箱测试请修改用户邮件和邮件密码及配置文件中对应的SMTP设置。
+			</div>
 <!-- TPLEND 以下内容不需更改，请保证该TPL页内的标签匹配即可 -->
 <{include file="system/footer.tpl" }>
 <{include file="common/ajaxAction.tpl" }>
